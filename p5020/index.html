@@ -21,8 +21,8 @@
 <meta property="article:published_time" content="2021-10-28T12:46:31.000Z">
 <meta property="article:modified_time" content="2022-03-12T07:28:52.326Z">
 <meta property="article:author" content="CloudySkyET">
-<meta property="article:tag" content="DP">
 <meta property="article:tag" content="题解">
+<meta property="article:tag" content="DP">
 <meta name="twitter:card" content="summary">
   
   
@@ -115,13 +115,13 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5020">P5020 [NOIP2018 提高组] 货币系统</a></p>
-<h2 id="题目大意：-t15">题目大意：</h2>
+<h2 id="题目大意：-t13">题目大意：</h2>
 <p>给定 n 种面值不同的货币，求与这 n 种货币组成的系统等价的系统中 <strong>用到货币最少的系统</strong> 的货币数量 m。<br>
 定义系统等价为任意一种面值要么两个系统都能表示出来，要么都不能表示出来。</p>
 <span id="more"></span>
-<h2 id="题目正解：-t15">题目正解：</h2>
+<h2 id="题目正解：-t13">题目正解：</h2>
 <p>完全背包</p>
-<h2 id="题目思路：-t14">题目思路：</h2>
+<h2 id="题目思路：-t12">题目思路：</h2>
 <p>想到面值表示就想到了完全背包（厕所灵感）</p>
 <p>可以发现如果一种货币本身可以被另一种货币表示出来，那么由它参与的面值也一定可以由除它以外的货币表示出来。</p>
 <p>所以我们只要找出有多少种货币本身是被其他货币表示出来的即可。</p>
@@ -131,9 +131,9 @@
 <p>状态转移方程也很简单:</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mi>j</mi></msub><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><msub><mi>f</mi><mi>j</mi></msub><mo separator="true">,</mo><msub><mi>f</mi><mrow><mi>j</mi><mo>−</mo><mi>a</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f_j = max(f_j, f_{j-a[i]})
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1052em;vertical-align:-0.3552em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.5198em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">a</span><span class="mopen mtight">[</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3552em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
-<h2 id="时间复杂度：-t15">时间复杂度：</h2>
+<h2 id="时间复杂度：-t12">时间复杂度：</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo>×</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n\times max(a_i))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">))</span></span></span></span></p>
-<h2 id="题目代码：-t14">题目代码：</h2>
+<h2 id="题目代码：-t12">题目代码：</h2>
 <details>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Maxn = <span class="number">2.5e4</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[Maxn], f[Maxn];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">work</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n, mx; <span class="built_in">scanf</span> (<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    <span class="built_in">scanf</span> (<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">    mx = <span class="built_in">max</span> (mx, a[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">sort</span> (a + <span class="number">1</span>, a + n + <span class="number">1</span>);</span><br><span class="line">  <span class="built_in">memset</span> (f, <span class="number">0</span>, <span class="built_in">sizeof</span> (f));</span><br><span class="line">  <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    <span class="keyword">if</span> (f[a[i]]) ans ++;</span><br><span class="line">    f[a[i]] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = a[i]; j &lt;= mx; ++j) &#123;</span><br><span class="line">      f[j] = <span class="built_in">max</span> (f[j], f[j-a[i]]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span> (<span class="string">&quot;%d\n&quot;</span>, n - ans);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> t; <span class="built_in">scanf</span> (<span class="string">&quot;%d&quot;</span>, &amp;t);</span><br><span class="line">  <span class="keyword">while</span> (t--) <span class="built_in">work</span> ();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </details>
@@ -147,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://cloudyskyet.github.io/Blog/p5020/" data-id="cl1m6ha630058lcvd66cubf9n" data-title="P5020 [NOIP2018 提高组] 货币系统" class="article-share-link">Share</a>
+      <a data-url="http://cloudyskyet.github.io/Blog/p5020/" data-id="cl27l573l004ynovd69f94ylz" data-title="P5020 [NOIP2018 提高组] 货币系统" class="article-share-link">Share</a>
       
       
       
@@ -195,7 +195,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/Blog/tags/DP/" style="font-size: 15px;">DP</a> <a href="/Blog/tags/Test/" style="font-size: 15px;">Test</a> <a href="/Blog/tags/%E4%BA%8C%E5%88%86/" style="font-size: 10px;">二分</a> <a href="/Blog/tags/%E5%88%86%E6%B2%BB/" style="font-size: 12.5px;">分治</a> <a href="/Blog/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 18.75px;">图论</a> <a href="/Blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 13.75px;">字符串</a> <a href="/Blog/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 10px;">搜索</a> <a href="/Blog/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 17.5px;">数学</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 16.25px;">数据结构</a> <a href="/Blog/tags/%E6%97%A9%E6%9C%9F/" style="font-size: 11.25px;">早期</a> <a href="/Blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 13.75px;">生活</a> <a href="/Blog/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 10px;">计算几何</a> <a href="/Blog/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 10px;">贪心</a> <a href="/Blog/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px;">题解</a>
+      <a href="/Blog/tags/DP/" style="font-size: 16px;">DP</a> <a href="/Blog/tags/Test/" style="font-size: 15px;">Test</a> <a href="/Blog/tags/%E4%BA%8C%E5%88%86/" style="font-size: 10px;">二分</a> <a href="/Blog/tags/%E5%88%86%E6%B2%BB/" style="font-size: 12px;">分治</a> <a href="/Blog/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 19px;">图论</a> <a href="/Blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 14px;">字符串</a> <a href="/Blog/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 10px;">搜索</a> <a href="/Blog/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 18px;">数学</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 17px;">数据结构</a> <a href="/Blog/tags/%E6%97%A9%E6%9C%9F/" style="font-size: 11px;">早期</a> <a href="/Blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 13px;">生活</a> <a href="/Blog/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 10px;">计算几何</a> <a href="/Blog/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 10px;">贪心</a> <a href="/Blog/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px;">题解</a>
     </div>
   </div>
 
@@ -207,7 +207,7 @@
       <ul>
         
           <li>
-            <a href="/Blog/NOI2022Provincial-election-youji/">NOI2022省选游记</a>
+            <a href="/Blog/NOI2022PE/">NOI2022省选游记</a>
           </li>
         
           <li>
@@ -219,11 +219,11 @@
           </li>
         
           <li>
-            <a href="/Blog/jgkdfsad/">一篇很丧很脑瘫的文章</a>
+            <a href="/Blog/p4248/">P4248 [AHOI2013]差异</a>
           </li>
         
           <li>
-            <a href="/Blog/p4248/">P4248 [AHOI2013]差异</a>
+            <a href="/Blog/cf235c/">CF235C Cyclical Quest</a>
           </li>
         
       </ul>
