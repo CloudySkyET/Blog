@@ -24,8 +24,8 @@
 <meta property="article:tag" content="题解">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="数学">
-<meta property="article:tag" content="搜索">
 <meta property="article:tag" content="Test">
+<meta property="article:tag" content="搜索">
 <meta name="twitter:card" content="summary">
   
   
@@ -66,17 +66,17 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/Blog/">Home</a>
+          <a class="main-nav-link" href="/Blog/">主页</a>
         
-          <a class="main-nav-link" href="/Blog/archives">Archives</a>
+          <a class="main-nav-link" href="/Blog/archives">归档</a>
         
-          <a class="main-nav-link" href="/Blog/BlogContent">索引</a>
+          <a class="main-nav-link" href="/Blog/categories">分类</a>
+        
+          <a class="main-nav-link" href="/Blog/tags">标签</a>
+        
+          <a class="main-nav-link" href="/Blog/recent-posts">近期文章</a>
         
           <a class="main-nav-link" href="/Blog/About">关于</a>
-        
-          <a class="main-nav-link" href="/Blog/Bin">垃圾箱</a>
-        
-          <a class="main-nav-link" href="/Blog/friends">友链</a>
         
       </nav>
       <nav id="sub-nav">
@@ -91,17 +91,15 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-solution-2021-12-12" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/Blog/solution-2021-12-12/" class="article-date">
-  <time class="dt-published" datetime="2021-12-12T19:54:21.000Z" itemprop="datePublished">2021-12-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a>
-  </div>
+        <div class=C_S_main>
+  <p class=top>CloudySky</p>
+  <img class=avatar src="https://avatars.githubusercontent.com/u/89725506?v=4">
+  <p class=saying_up>纵使世界万般残酷</p>
+  <p class=saying_down>总有温暖值得守护</p>
+  </details>
+</div>
 
-  </div>
+        <section id="main"><article id="post-solution-2021-12-12" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
     
     
@@ -119,31 +117,31 @@
       
         <p>2021-12-12 双十二挂分大赛。。。</p>
 <span id="more"></span>
-<h2 id="考场部分简结">考场部分简结</h2>
+<h2 id="考场部分简结-t2">考场部分简结</h2>
 <p>上来先扫题，T1 貌似线性筛能骗到分？但记不太清了。先跳过，T2 好像搜索题，T3 貌似也是呢。。<br>
 看 T4 好像是树剖，开始刚 T4 。T4 一开始看了半小时没思路，开始写暴力，写着写着，好像会正解了。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>L</mi><mo>+</mo></mrow><annotation encoding="application/x-tex">100L+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mord mathnormal">L</span><span class="mord">+</span></span></span></span> Wasted<br>
 调完 T4 写 T2，调了半天样例过了，貌似 1s 跑的出来。<br>
 开始写 T1 ，线性筛没调出来，转质因数分解，看了眼题面 <code>输入包含若干组数据，每组数据只包含一行，即数 N</code>。难道只是样例偷懒了？又害怕输入停止写错了，于是改成了单测。<br>
 吃完饭回来，T1 就是多测。。。 T2 没清空且 <code>&quot;%d\n&quot;</code> 写成了 <code>&quot;%d &quot;</code> 于是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>156</mn><mo>−</mo><mo>&gt;</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">156 -&gt; 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">156</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span></span></span></span> 。</p>
-<h2 id="题解部分">题解部分</h2>
+<h2 id="题解部分-t2">题解部分</h2>
 <h1><a target="_blank" rel="noopener" href="https://sjzezoj.com/contest/179/problem/1168">T1. NonPrime</a></h1>
-<h2 id="题目大意：-t14">题目大意：</h2>
+<h2 id="题目大意：-t19">题目大意：</h2>
 <p>令 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> 为约数个数，给定 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>, 求最大正整数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">x\in [1, n]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">]</span></span></span></span> 令 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>y</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mi>x</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>d</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall y\in [1, x), d(y) &lt; d(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∀</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> 。</p>
-<h2 id="题目正解：-t14">题目正解：</h2>
+<h2 id="题目正解：-t20">题目正解：</h2>
 <p>搜索 + 剪枝</p>
-<h2 id="题目思路：-t13">题目思路：</h2>
+<h2 id="题目思路：-t19">题目思路：</h2>
 <p>考虑利用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>若</mtext><mi>n</mi><mo>=</mo><mo>∏</mo><msubsup><mi>p</mi><mi>i</mi><msub><mi>k</mi><mi>i</mi></msub></msubsup><mo separator="true">,</mo><mtext>则</mtext><mi>d</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo>∏</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>k</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{若} n = \prod p_i^{k_i}, \text{则} d(n) = \prod (1 + k_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord cjk_fallback">若</span></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2079em;vertical-align:-0.2769em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∏</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.931em;"><span style="top:-2.4231em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.1449em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0315em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2769em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord cjk_fallback">则</span></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∏</span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0315em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 这个性质，枚举质数来求。<br>
 感性理解一下设当前各质数的指数相同，若增加一个质数，所得贡献是相同的，但小质数对 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 增长的贡献较小，所以各质数，由小到大，的指数应该是递减的。<br>
 得到这条性质后，我们发现 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∏</mo><mn>1</mn><mn>9</mn></msubsup><msub><mi>p</mi><mi>i</mi></msub><mo separator="true">,</mo><mtext>即</mtext><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>7</mn><mo>×</mo><mn>11</mn><mo>×</mo><mn>13</mn><mo>×</mo><mn>17</mn><mo>×</mo><mn>19</mn><mo>×</mo><mn>23</mn><mo>&gt;</mo><mn>3</mn><mi>e</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">\prod_1^9 p_i, 即 2 \times 3 \times 5 \times 7 \times 11 \times 13 \times 17 \times 19 \times 23 &gt; 3e9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2537em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.954em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord cjk_fallback">即</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">11</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">13</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">17</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">19</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">23</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord mathnormal">e</span><span class="mord">9</span></span></span></span><br>
 所以只需要将 9 个素数表打出来，然后搜索即可。</p>
-<h2 id="时间复杂度：-t14">时间复杂度：</h2>
+<h2 id="时间复杂度：-t20">时间复杂度：</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mtext>玄学</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\text{玄学})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord text"><span class="mord cjk_fallback">玄学</span></span><span class="mclose">)</span></span></span></span></p>
-<h2 id="题目代码：-t13">题目代码：</h2>
+<h2 id="题目代码：-t19">题目代码：</h2>
 <details>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Code By CloudySky</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">// #define ktj tag</span></span><br><span class="line"><span class="comment">// #define int long long</span></span><br><span class="line"><span class="keyword">namespace</span> IO  <span class="comment">// namespace IO</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> IO;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Maxn = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> p[] = &#123;<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">13</span>, <span class="number">17</span>, <span class="number">19</span>, <span class="number">23</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> ans, pos, n;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span> <span class="params">(<span class="type">int</span> cur, <span class="type">int</span> now, <span class="type">int</span> cnt, <span class="type">int</span> MAX)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (cur == Maxn) &#123;</span><br><span class="line">    <span class="keyword">if</span> (cnt &gt; ans || (cnt == ans &amp;&amp; now &lt; pos))</span><br><span class="line">       ans = cnt, pos = now;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>, P = <span class="number">1</span>; now * P &lt;= n &amp;&amp; i &lt;= MAX; ++i, P *= p[cur]) &#123;</span><br><span class="line">    <span class="built_in">dfs</span> (cur + <span class="number">1</span>, now * P, cnt * (<span class="number">1</span> + i), <span class="built_in">min</span> (MAX, i));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">work</span> <span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">  ans = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">dfs</span> (<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0x3f3f3f3f</span>);</span><br><span class="line">  <span class="built_in">printf</span> (<span class="string">&quot;%d\n&quot;</span>, pos);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">while</span> (<span class="built_in">scanf</span> (<span class="string">&quot;%d&quot;</span>, &amp;n)) <span class="built_in">work</span> (n);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </details>
 <h1><a target="_blank" rel="noopener" href="https://sjzezoj.com/contest/179/problem/1172">T4. 小T树</a></h1>
-<h2 id="题目大意：-t15">题目大意：</h2>
+<h2 id="题目大意：-t20">题目大意：</h2>
 <p>给定一颗 1 为根树，两种操作：</p>
 <ul>
 <li>修改：输入 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">x, v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span> 。将 x 及子树中，深度奇偶性和 x 相同的点权值加 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span> , 否则减 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span>。</li>
@@ -153,7 +151,7 @@
 <p>树剖 + 线段树（树状数组）</p>
 <h2 id="题目正解-2：">题目正解 2：</h2>
 <p>双树状数组</p>
-<h2 id="题目思路：-t14">题目思路：</h2>
+<h2 id="题目思路：-t20">题目思路：</h2>
 <p>其实这两种思路完全不同。<br>
 你考虑你要将子树中深度为奇数的点和深度为偶数的点分别修改，但这无论如何无法构成连续区间。<br>
 所以可以考虑将他们拆成两部分连续区间，这就是双树状数组的做法。<br>
@@ -166,7 +164,7 @@
 适用于 Subtask 2</p>
 <p>然后你发现这一条链已经可以成连续区间了。<br>
 但考虑正负变化，你可以钦定深度为奇数的点贡献为正，深度为偶数的点贡献为负，然后套一个树剖统计从 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 到根的的贡献和。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>若</mtext><mi>d</mi><mi>e</mi><msub><mi>p</mi><mi>x</mi></msub><mo>&amp;</mo><mn>1</mn><mo separator="true">,</mo><mi>a</mi><mi>n</mi><mi>s</mi><mo>=</mo><mi>s</mi><mi>u</mi><mi>m</mi><mo>+</mo><msub><mi>a</mi><mi>x</mi></msub><mtext>否则</mtext><mo separator="true">,</mo><mi>a</mi><mi>n</mi><mi>s</mi><mo>=</mo><mo>−</mo><mi>s</mi><mi>u</mi><mi>m</mi><mo>+</mo><msub><mi>a</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">\text{若} dep_x \And 1, ans = sum + a_x \text{否则}, ans = -sum + a_x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord cjk_fallback">若</span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">&amp;</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">an</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">s</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord text"><span class="mord cjk_fallback">否则</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">an</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord mathnormal">s</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
-<h2 id="时间复杂度：-t15">时间复杂度：</h2>
+<h2 id="时间复杂度：-t21">时间复杂度：</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
 <h2 id="题目代码-Sb2-没用上-：">题目代码(Sb2 没用上)：</h2>
 <details>
@@ -181,13 +179,23 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://cloudyskyet.github.io/Blog/solution-2021-12-12/" data-id="cl27l573n005anovdf6z03ndc" data-title="2021-12-12 模拟赛总结" class="article-share-link">Share</a>
+  <footer class="article-footer">
+    <!-- <a data-url="http://cloudyskyet.github.io/Blog/solution-2021-12-12/" data-id="cl2eokjd9005fl8vde99v2lgk" data-title="2021-12-12 模拟赛总结" class="article-share-link">Share</a> -->
+    
       
-      
-      
+        <div class="article-meta">
+          <a href="/Blog/solution-2021-12-12/" class="article-date">
+  <time class="dt-published" datetime="2021-12-12T19:54:21.000Z" itemprop="datePublished">2021-12-12</time>
+</a>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a>
+  </div>
+
+          
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Test/" rel="tag">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E6%90%9C%E7%B4%A2/" rel="tag">搜索</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
 
+        </div>
     </footer>
   </div>
   
@@ -216,85 +224,12 @@
 
 
 </section>
-        
-          <aside id="sidebar">
-  
-    <div class=C_S_main>
-  <p class=top>CloudySky</p>
-  <img class=avatar src="https://avatars.githubusercontent.com/u/89725506?v=4">
-  <p class=saying_up>纵使世界万般残酷</p>
-  <p class=saying_down>总有温暖值得守护</p>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/Blog/tags/DP/" style="font-size: 16px;">DP</a> <a href="/Blog/tags/Test/" style="font-size: 15px;">Test</a> <a href="/Blog/tags/%E4%BA%8C%E5%88%86/" style="font-size: 10px;">二分</a> <a href="/Blog/tags/%E5%88%86%E6%B2%BB/" style="font-size: 12px;">分治</a> <a href="/Blog/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 19px;">图论</a> <a href="/Blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 14px;">字符串</a> <a href="/Blog/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 10px;">搜索</a> <a href="/Blog/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 18px;">数学</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 17px;">数据结构</a> <a href="/Blog/tags/%E6%97%A9%E6%9C%9F/" style="font-size: 11px;">早期</a> <a href="/Blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 13px;">生活</a> <a href="/Blog/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 10px;">计算几何</a> <a href="/Blog/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 10px;">贪心</a> <a href="/Blog/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px;">题解</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/Blog/NOI2022PE/">NOI2022省选游记</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/codeforeces-round-779/">CodeforcesRound779(CF1658)</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/solution-2022-Provincial-election-Simulation-Competition/">2021高一有基础省选模拟赛</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/p4248/">P4248 [AHOI2013]差异</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/cf235c/">CF235C Cyclical Quest</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/1900/01/">January 1900</a></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
         <C_S_div class=getop>
   <div class=blank></div>
   <a href="#" class=top>Top</a>
 </C_S_div>
       </div>
       <footer id="footer">
-  
   <div class="outer">
     <div id="footer-info" class="inner">
       
@@ -307,17 +242,17 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/Blog/" class="mobile-nav-link">Home</a>
+    <a href="/Blog/" class="mobile-nav-link">主页</a>
   
-    <a href="/Blog/archives" class="mobile-nav-link">Archives</a>
+    <a href="/Blog/archives" class="mobile-nav-link">归档</a>
   
-    <a href="/Blog/BlogContent" class="mobile-nav-link">索引</a>
+    <a href="/Blog/categories" class="mobile-nav-link">分类</a>
+  
+    <a href="/Blog/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/Blog/recent-posts" class="mobile-nav-link">近期文章</a>
   
     <a href="/Blog/About" class="mobile-nav-link">关于</a>
-  
-    <a href="/Blog/Bin" class="mobile-nav-link">垃圾箱</a>
-  
-    <a href="/Blog/friends" class="mobile-nav-link">友链</a>
   
 </nav>
     

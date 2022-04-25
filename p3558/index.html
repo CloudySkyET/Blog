@@ -63,17 +63,17 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/Blog/">Home</a>
+          <a class="main-nav-link" href="/Blog/">主页</a>
         
-          <a class="main-nav-link" href="/Blog/archives">Archives</a>
+          <a class="main-nav-link" href="/Blog/archives">归档</a>
         
-          <a class="main-nav-link" href="/Blog/BlogContent">索引</a>
+          <a class="main-nav-link" href="/Blog/categories">分类</a>
+        
+          <a class="main-nav-link" href="/Blog/tags">标签</a>
+        
+          <a class="main-nav-link" href="/Blog/recent-posts">近期文章</a>
         
           <a class="main-nav-link" href="/Blog/About">关于</a>
-        
-          <a class="main-nav-link" href="/Blog/Bin">垃圾箱</a>
-        
-          <a class="main-nav-link" href="/Blog/friends">友链</a>
         
       </nav>
       <nav id="sub-nav">
@@ -88,17 +88,15 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-p3558" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/Blog/p3558/" class="article-date">
-  <time class="dt-published" datetime="2021-10-31T11:40:15.000Z" itemprop="datePublished">2021-10-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a>
-  </div>
+        <div class=C_S_main>
+  <p class=top>CloudySky</p>
+  <img class=avatar src="https://avatars.githubusercontent.com/u/89725506?v=4">
+  <p class=saying_up>纵使世界万般残酷</p>
+  <p class=saying_down>总有温暖值得守护</p>
+  </details>
+</div>
 
-  </div>
+        <section id="main"><article id="post-p3558" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
     
     
@@ -115,12 +113,12 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3558">P3558 [POI2013]BAJ-Bytecomputer</a></p>
-<h2 id="题目大意：-t27">题目大意：</h2>
+<h2 id="题目大意：-t11">题目大意：</h2>
 <p>给定一个长度为 n 的 -1, 0, 1 序列。每次可以将 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>+</mo><mo>=</mo><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>2</mn><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">]</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a_x += a_{x-1} (x\in [2, n])</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">+</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">])</span></span></span></span> 求最小的修改次数使给定序列成为不降序列，无解输出 <code>-1</code>。</p>
 <span id="more"></span>
-<h2 id="题目正解：-t27">题目正解：</h2>
+<h2 id="题目正解：-t11">题目正解：</h2>
 <p>线性 DP</p>
-<h2 id="题目思路：-t26">题目思路：</h2>
+<h2 id="题目思路：-t10">题目思路：</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> 表示将第 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span> 位改为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">j - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 形成非降序列的最少修改次数。</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i, 0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> 只能由 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i - 1, 0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mpunct mtight">,</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> 转移而来，如果：</p>
 <ul>
@@ -138,9 +136,9 @@
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo separator="true">,</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i, 2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> 转移比较暴力，如果 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo mathvariant="normal">≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_i \ne 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 就拉，否则由 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">f_{i-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9028em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> 的三个状态取 min 转移（显然 -1, 0, 1 都可以接到 1 上构成非降序列。）</p>
 <p>转移方程较多，但并不难想到，注意不要产生丢落即可。</p>
 <p>边界的话除了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mn>1</mn><mo separator="true">,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_{1, a_1  + 1} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mpunct mtight">,</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> 以外都设为 inf，最后统计答案如果都大于等于 inf 就无解，否则取 min 。</p>
-<h2 id="时间复杂度：-t27">时间复杂度：</h2>
+<h2 id="时间复杂度：-t11">时间复杂度：</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
-<h2 id="题目代码：-t23">题目代码：</h2>
+<h2 id="题目代码：-t10">题目代码：</h2>
 <details>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> inf 0x3f3f3f3f</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Maxn = <span class="number">1e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[Maxn], f[Maxn][<span class="number">3</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">memset</span>(f, <span class="number">0x3f</span>, <span class="built_in">sizeof</span>(f));</span><br><span class="line">  f[<span class="number">1</span>][a[<span class="number">1</span>] + <span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    <span class="keyword">if</span> (a[i] == <span class="number">-1</span>) &#123;</span><br><span class="line">      f[i][<span class="number">0</span>] = f[i - <span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">      f[i][<span class="number">2</span>] = f[i - <span class="number">1</span>][<span class="number">2</span>] + <span class="number">2</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a[i] == <span class="number">0</span>) &#123;</span><br><span class="line">      f[i][<span class="number">0</span>] = f[i - <span class="number">1</span>][<span class="number">0</span>] + <span class="number">1</span>;</span><br><span class="line">      f[i][<span class="number">1</span>] = <span class="built_in">min</span>(f[i - <span class="number">1</span>][<span class="number">0</span>], f[i - <span class="number">1</span>][<span class="number">1</span>]);</span><br><span class="line">      f[i][<span class="number">2</span>] = f[i - <span class="number">1</span>][<span class="number">2</span>] + <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a[i] == <span class="number">1</span>) &#123;</span><br><span class="line">      f[i][<span class="number">0</span>] = f[i - <span class="number">1</span>][<span class="number">0</span>] + <span class="number">2</span>;</span><br><span class="line">      f[i][<span class="number">1</span>] = f[i - <span class="number">1</span>][<span class="number">0</span>] + <span class="number">1</span>;</span><br><span class="line">      f[i][<span class="number">2</span>] = <span class="built_in">min</span>(f[i - <span class="number">1</span>][<span class="number">0</span>], <span class="built_in">min</span>(f[i - <span class="number">1</span>][<span class="number">1</span>], f[i - <span class="number">1</span>][<span class="number">2</span>]));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (f[n][<span class="number">0</span>] &gt;= inf &amp;&amp; f[n][<span class="number">1</span>] &gt;= inf &amp;&amp; f[n][<span class="number">2</span>] &gt;= inf)</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;BRAK&quot;</span>);</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">min</span>(f[n][<span class="number">0</span>], <span class="built_in">min</span>(f[n][<span class="number">1</span>], f[n][<span class="number">2</span>])));</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </details>
@@ -153,13 +151,23 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://cloudyskyet.github.io/Blog/p3558/" data-id="cl27l573y007onovd922l9nzs" data-title="P3558 [POI2013]BAJ-Bytecomputer" class="article-share-link">Share</a>
+  <footer class="article-footer">
+    <!-- <a data-url="http://cloudyskyet.github.io/Blog/p3558/" data-id="cl2eokjd3004ll8vdgx1wbv04" data-title="P3558 [POI2013]BAJ-Bytecomputer" class="article-share-link">Share</a> -->
+    
       
-      
-      
+        <div class="article-meta">
+          <a href="/Blog/p3558/" class="article-date">
+  <time class="dt-published" datetime="2021-10-31T11:40:15.000Z" itemprop="datePublished">2021-10-31</time>
+</a>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a>
+  </div>
+
+          
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
 
+        </div>
     </footer>
   </div>
   
@@ -188,85 +196,12 @@
 
 
 </section>
-        
-          <aside id="sidebar">
-  
-    <div class=C_S_main>
-  <p class=top>CloudySky</p>
-  <img class=avatar src="https://avatars.githubusercontent.com/u/89725506?v=4">
-  <p class=saying_up>纵使世界万般残酷</p>
-  <p class=saying_down>总有温暖值得守护</p>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/Blog/tags/DP/" style="font-size: 16px;">DP</a> <a href="/Blog/tags/Test/" style="font-size: 15px;">Test</a> <a href="/Blog/tags/%E4%BA%8C%E5%88%86/" style="font-size: 10px;">二分</a> <a href="/Blog/tags/%E5%88%86%E6%B2%BB/" style="font-size: 12px;">分治</a> <a href="/Blog/tags/%E5%9B%BE%E8%AE%BA/" style="font-size: 19px;">图论</a> <a href="/Blog/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 14px;">字符串</a> <a href="/Blog/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 10px;">搜索</a> <a href="/Blog/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 18px;">数学</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 17px;">数据结构</a> <a href="/Blog/tags/%E6%97%A9%E6%9C%9F/" style="font-size: 11px;">早期</a> <a href="/Blog/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 13px;">生活</a> <a href="/Blog/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/" style="font-size: 10px;">计算几何</a> <a href="/Blog/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 10px;">贪心</a> <a href="/Blog/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px;">题解</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/Blog/NOI2022PE/">NOI2022省选游记</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/codeforeces-round-779/">CodeforcesRound779(CF1658)</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/solution-2022-Provincial-election-Simulation-Competition/">2021高一有基础省选模拟赛</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/p4248/">P4248 [AHOI2013]差异</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/cf235c/">CF235C Cyclical Quest</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li><li class="category-list-item"><a class="category-list-link" href="/Blog/categories/%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93/">题目总结</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/1900/01/">January 1900</a></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
         <C_S_div class=getop>
   <div class=blank></div>
   <a href="#" class=top>Top</a>
 </C_S_div>
       </div>
       <footer id="footer">
-  
   <div class="outer">
     <div id="footer-info" class="inner">
       
@@ -279,17 +214,17 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/Blog/" class="mobile-nav-link">Home</a>
+    <a href="/Blog/" class="mobile-nav-link">主页</a>
   
-    <a href="/Blog/archives" class="mobile-nav-link">Archives</a>
+    <a href="/Blog/archives" class="mobile-nav-link">归档</a>
   
-    <a href="/Blog/BlogContent" class="mobile-nav-link">索引</a>
+    <a href="/Blog/categories" class="mobile-nav-link">分类</a>
+  
+    <a href="/Blog/tags" class="mobile-nav-link">标签</a>
+  
+    <a href="/Blog/recent-posts" class="mobile-nav-link">近期文章</a>
   
     <a href="/Blog/About" class="mobile-nav-link">关于</a>
-  
-    <a href="/Blog/Bin" class="mobile-nav-link">垃圾箱</a>
-  
-    <a href="/Blog/friends" class="mobile-nav-link">友链</a>
   
 </nav>
     

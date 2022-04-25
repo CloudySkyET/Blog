@@ -123,7 +123,7 @@ body,
   height: 100%;
 }
 body {
-  background: #eee;
+  background: #fff;
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -174,7 +174,7 @@ body {
   -ms-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   z-index: 1;
-  background: #eee;
+  background: #fff;
 }
 .mobile-nav-on #wrap {
   left: 280px;
@@ -182,7 +182,7 @@ body {
 @media screen and (min-width: 768px) {
   #main {
     display: inline;
-    float: left;
+    /* float: left; */
     width: 73.33333333333333%;
     margin: 0 0.833333333333333%;
   }
@@ -203,9 +203,7 @@ body {
 .article-inner,
 .archive-article-inner {
   background: #fff;
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   border-radius: 3px;
   transition: 0.5s;
 }
@@ -505,9 +503,6 @@ body {
 .search-form-submit:focus {
   color: #777;
 }
-.article {
-  margin: 50px 0;
-}
 .article-inner {
   overflow: hidden;
 }
@@ -690,7 +685,6 @@ a.article-title:hover {
 .article-footer {
   font-size: 0.85em;
   line-height: 1.6em;
-  border-top: 1px solid #ddd;
   padding-top: 1.6em;
   margin: 0 20px 20px;
 }
@@ -746,9 +740,6 @@ a.article-title:hover {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  #article-nav {
-    margin: 50px 0;
-  }
   #article-nav:before {
     width: 8px;
     height: 8px;
@@ -1016,11 +1007,7 @@ a.article-title:hover {
   display: block;
 }
 #page-nav {
-  margin: 50px auto;
   background: #fff;
-  -webkit-box-shadow: 1px 2px 3px #ddd;
-  box-shadow: 1px 2px 3px #ddd;
-  border: 1px solid #ddd;
   border-radius: 3px;
   text-align: center;
   color: #999;
@@ -1070,7 +1057,7 @@ a.article-title:hover {
   color: #ddd;
 }
 #footer {
-  background: #262a30;
+  background: #fff;
   padding: 50px 0;
   border-top: 1px solid #ddd;
   color: #999;
@@ -1284,23 +1271,17 @@ pre .javascript .function {
 @media screen and (min-width: 768px) {
   #sidebar {
     display: inline;
-    float: right;
+    /* float: right; */
     width: 23.333333333333332%;
     margin: 0 0.833333333333333%;
   }
 }
 
-
-.widget-wrap {
-  margin: 50px 0;
-}
 .widget {
   color: #fff;
   background: #fff;
-  -webkit-box-shadow: 0 -1px 4px #ccc;
-  box-shadow: 0 -1px 4px #ccc;
-  border: 1px solid #ccc;
-  padding: 15px;
+  border: 1px solid #fff;
+  padding: 0 15px 15px 15px;
   border-radius: 3px;
 }
 .widget a {
@@ -1369,10 +1350,9 @@ pre .javascript .function {
 }
 
 .C_S_main {
-  margin-top: 50px;
   background: #fff;
-  -webkit-box-shadow: 0 -1px 4px #ccc;
-  box-shadow: 0 -1px 4px #ccc;
+  /* -webkit-box-shadow: 0 -1px 4px #ccc;
+  box-shadow: 0 -1px 4px #ccc; */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 3px;
